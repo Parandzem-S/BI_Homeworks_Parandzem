@@ -23,7 +23,7 @@ figure1 = dict(data=data,layout=layout)
 
 
 #Graph 2-Time Series
-Data=quandl.get("FRED/GDP", authtoken="4znMPd7_HKFqDvStTZ7e")
+Data=quandl.get("FRED/GDP", authtoken="")
 
 
 x_values = pd.to_datetime(Data.index.values)
@@ -37,7 +37,7 @@ figure2 = dict(data=data, layout=layout)
 
 		
 #Graph3-Box Plot
-Data2=quandl.get(["WIKI/GOOGL", "BCHARTS/ABUCOINSUSD"],authtoken="4znMPd7_HKFqDvStTZ7e")
+Data2=quandl.get(["WIKI/GOOGL", "BCHARTS/ABUCOINSUSD"],authtoken="")
 
 Data2=Data2.rename(columns={'WIKI/GOOGL - Open':'OpenGoogle'})
 Data2=Data2.rename(columns={'BCHARTS/ABUCOINSUSD - Open':'OpenBitcoin'})
@@ -53,7 +53,7 @@ figure3 = dict(data=data, layout=layout)
 
 
 #Graph 4-Table
-DataB=quandl.get(["BCHARTS/ABUCOINSUSD"],authtoken="4znMPd7_HKFqDvStTZ7e")
+DataB=quandl.get(["BCHARTS/ABUCOINSUSD"],authtoken="")
 DataG=quandl.get(["WIKI/GOOGL"],authtoken="4znMPd7_HKFqDvStTZ7e")
 
 DataG=DataG.rename(columns={'WIKI/GOOGL - Open':'OpGoogle'})
