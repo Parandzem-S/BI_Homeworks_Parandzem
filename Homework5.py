@@ -7,7 +7,7 @@ import quandl
 import pandas as pd
 import datetime
 from plots import figure1, figure5
-quandl.ApiConfig.api_key = '4znMPd7_HKFqDvStTZ7e'
+quandl.ApiConfig.api_key = ''
 
 
 app = dash.Dash()
